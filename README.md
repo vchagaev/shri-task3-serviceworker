@@ -1,4 +1,8 @@
 [![Build Status](https://travis-ci.org/vchagaev/shri-task3-serviceworker.svg?branch=master)](https://travis-ci.org/vchagaev/shri-task3-serviceworker)
+[![bitHound Overall Score](https://www.bithound.io/github/vchagaev/shri-task3-serviceworker/badges/score.svg)](https://www.bithound.io/github/vchagaev/shri-task3-serviceworker)
+[![bitHound Dependencies](https://www.bithound.io/github/vchagaev/shri-task3-serviceworker/badges/dependencies.svg)](https://www.bithound.io/github/vchagaev/shri-task3-serviceworker/master/dependencies/npm)
+[![bitHound Dev Dependencies](https://www.bithound.io/github/vchagaev/shri-task3-serviceworker/badges/devDependencies.svg)](https://www.bithound.io/github/vchagaev/shri-task3-serviceworker/master/dependencies/npm)
+[![bitHound Code](https://www.bithound.io/github/vchagaev/shri-task3-serviceworker/badges/code.svg)](https://www.bithound.io/github/vchagaev/shri-task3-serviceworker)
 
 #Задание №3 ServiceWorker
 
