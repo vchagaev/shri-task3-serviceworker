@@ -3,7 +3,8 @@ module.exports = {
     root: true,
     env: {
         browser: true,
-        worker: true
+        worker: true,
+        node: true
     },
     rules: {
         'no-console': 0,

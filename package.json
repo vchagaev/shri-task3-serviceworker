@@ -12,7 +12,8 @@
     "url": "https://example.com"
   },
   "scripts": {
-    "start": "node ./"
+    "start": "node ./",
+    "test": "eslint ./"
   },
   "author": "Maxim Vasilyev",
   "dependencies": {

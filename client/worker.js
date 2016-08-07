@@ -1,3 +1,5 @@
+'use strict';
+
 const CACHE_NAME = 'shri-2016-task3-1';
 const API_URL = '/api/v1/students';
 const URLS_TO_CACHE = [
@@ -8,7 +10,6 @@ const URLS_TO_CACHE = [
 ];
 
 self.addEventListener('install', (event) => {
-    'use strict';
     event.waitUntil(
         caches.open(CACHE_NAME)
             .then((cache) => {
@@ -32,12 +33,10 @@ self.addEventListener('install', (event) => {
 });
 
 self.addEventListener('activate', (event) => {
-    'use strict';
     event.waitUntil(self.clients.claim());
 });
 
 self.addEventListener('fetch', (event) => {
-    'use strict';
     /**
      * Fetches response for the request and puts the response to cache.<br>
      * Catch if request is unreachable

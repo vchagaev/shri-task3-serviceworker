@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  * Validation Error
  */
@@ -313,7 +315,6 @@ class StudentsApp {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    'use strict';
 
     window.app = new StudentsApp();
     const app = window.app;
