@@ -22,7 +22,7 @@
     "lodash": "^4.6.1"
   },
   "devDependencies": {
-    "eslint": "^2.8.0",
-    "eslint-config-loris": "^3.0.0"
+    "eslint": "^3.2.2",
+    "eslint-config-loris": "^5.1.0"
   }
 }
