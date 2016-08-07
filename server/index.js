@@ -33,7 +33,7 @@ app.put('/api/v1/students/:id', (req, res) => {
     console.timeEnd('PUT /api/v1/students/');
 });
 
-app.listen(8080, () => {
+app.listen(process.env.PORT || 5000, () => {
     console.log('Server listening on port 8080!');
 });
 
