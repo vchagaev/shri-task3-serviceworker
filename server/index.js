@@ -34,7 +34,7 @@ app.put('/api/v1/students/:id', (req, res) => {
 });
 
 app.listen(process.env.PORT || 5000, () => {
-    console.log('Server listening on port 8080!');
+    console.log('Server listening on port ', process.env.PORT);
 });
 
 function parseStudentFromRequest(req) {
