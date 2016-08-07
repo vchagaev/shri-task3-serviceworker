@@ -1,4 +1,5 @@
-#Яндекс ШРИ
+[![Build Status](https://travis-ci.org/vchagaev/shri-task3-serviceworker.svg?branch=master)](https://travis-ci.org/vchagaev/shri-task3-serviceworker)
+
 #Задание №3 ServiceWorker
 
 ##Начало
