@@ -4,6 +4,28 @@
 [![bitHound Dev Dependencies](https://www.bithound.io/github/vchagaev/shri-task3-serviceworker/badges/devDependencies.svg)](https://www.bithound.io/github/vchagaev/shri-task3-serviceworker/master/dependencies/npm)
 [![bitHound Code](https://www.bithound.io/github/vchagaev/shri-task3-serviceworker/badges/code.svg)](https://www.bithound.io/github/vchagaev/shri-task3-serviceworker)
 
+#Домашнее задание по инфраструктуре
+##VCS-хостинг
+Для тестового задания использовался github. Для дз оставил его.
+##Приложение
+Приложение взял из тестового задания. https://academy.yandex.ru/events/frontend/shri_msk-2016/. Еще немного его причесал, чтобы проходил проверку линтера. При записи и чтении пишутся логи.
+##Логи
+
+##Линтеры
+Изначально в проекте использовались ESLint + JSCS с конфигами от Яндекс карт, так как нашел их в открытом доступе.
+Удалил из проекта JSCS так как они все вливают в ESLint. Добавил проверку линтером при npm test.
+##Хостинг
+Залил приложение в heroku. Особых проблем не было. Разве, что только с портом, который необходим слушать.
+##CI
+Настроил CI на travis. Все просто. Связка github -> heroku настраиватся почти автоматом. Протестировал пулл реквесты.
+##Облачный линтер
+Настроил облачный линтинг BitHound и он мне сразу сказал про устаревшие dev-dependencies (eslint + его конфиг).
+Сразу создал пулл реквест и обновил версии. Причем пулл ревест уже проверялся и Travis'ом и BitHound'ом. Добавил плашки =)
+##Внешний мониторинг
+Настроил внешний мониторинг на uptimerobot.com. Интервал задал 12 часов, т.к. использую бесплатный план на heroku.
+##Тесты
+
+
 #Задание №3 ServiceWorker
 
 ##Начало
