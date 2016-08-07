@@ -22,8 +22,6 @@
   },
   "devDependencies": {
     "eslint": "^2.8.0",
-    "eslint-config-loris": "^3.0.0",
-    "jscs": "^3.0.3",
-    "jscs-preset-loris": "^1.1.2"
+    "eslint-config-loris": "^3.0.0"
   }
 }
