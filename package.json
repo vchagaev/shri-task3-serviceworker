@@ -9,22 +9,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://example.com"
+    "url": "https://github.com/vchagaev/shri-task3-serviceworker.git"
   },
   "scripts": {
     "start": "node ./",
     "test": "./node_modules/.bin/jasmine-node spec & eslint ./"
   },
-  "author": "Maxim Vasilyev",
+  "author": "Maxim Vasilyev & Vladislav Chagaev",
   "dependencies": {
     "body-parser": "^1.15.0",
-    "express": "^4.13.4",
-    "jasmine-node": "^1.14.5",
     "lodash": "^4.6.1",
-    "request": "^2.74.0"
+    "express": "^4.13.4"
   },
   "devDependencies": {
     "eslint": "^3.2.2",
-    "eslint-config-loris": "^5.1.0"
+    "eslint-config-loris": "^5.1.0",
+    "request": "^2.74.0",
+    "jasmine-node": "^1.14.5"
   }
 }
