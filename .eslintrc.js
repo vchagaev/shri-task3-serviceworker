@@ -4,7 +4,8 @@ module.exports = {
     env: {
         browser: true,
         worker: true,
-        node: true
+        node: true,
+        jasmine: true
     },
     rules: {
         'no-console': 0,

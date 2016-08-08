@@ -27,7 +27,6 @@ function getAll(storage) {
 
 function update(storage, student) {
     const result = find(storage, (x) => x.id === student.id);
-
     if (!result) {
         throw new Error('Student with id ${student.id} not found!');
     }

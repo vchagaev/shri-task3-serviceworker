@@ -26,7 +26,7 @@ class StudentsApp {
             name: (value) => {
                 return Boolean(value);
             },
-            picture: (value) => {
+            picSrc: (value) => {
                 if (!value || !/^https?:\/\//.test(value)) {
                     return false;
                 }
@@ -216,7 +216,7 @@ class StudentsApp {
     static renderStudent(student) {
         return `
         <div class="student" data-student='${JSON.stringify(student)}'>
-            <div class="student__picture">
+            <div class="student__picSrc">
                 <img class="student__img" src="${student.picSrc}">
             </div>
             <div class="student__info">
@@ -241,9 +241,9 @@ class StudentsApp {
                 <span class="student-form__field-label">Имя</span>
                 <input type="text" name="name" value="${student.name}">
             </label>
-            <label class="student-form__field student-form__field-picture">
+            <label class="student-form__field student-form__field-picSrc">
                 <span class="student-form__field-label">URL фотографии</span>
-                <input type="text" name="picture" value="${student.picSrc}">
+                <input type="text" name="picSrc" value="${student.picSrc}">
             </label>
             <label class="student-form__field student-form__field-bio">
                 <span class="student-form__field-label">Кратко о себе</span>
@@ -255,14 +255,14 @@ class StudentsApp {
     }
 
     /**
-     * Validate student's name, picture, bio
+     * Validate student's name, picSrc, bio
      * @param student
      * @returns {*}
      */
     validateStudent(student) {
         try {
             this.validate(student, 'name', 'Не заполнено имя студента');
-            this.validate(student, 'picture', 'Неправильный адрес фотографии студента');
+            this.validate(student, 'picSrc', 'Неправильный адрес фотографии студента');
             this.validate(student, 'bio', 'Не заполнена биография');
         } catch (e) {
             if (e instanceof ValidationError) {

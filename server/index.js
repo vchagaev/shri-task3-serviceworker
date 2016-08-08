@@ -33,15 +33,20 @@ app.put('/api/v1/students/:id', (req, res) => {
     console.timeEnd('PUT /api/v1/students/');
 });
 
-app.listen(process.env.PORT || 5000, () => {
-    console.log('Server listening on port ', process.env.PORT);
+const myServer = app.listen(process.env.PORT || 5000, () => {
+    console.log('Server listening on port ', process.env.PORT === undefined ? 5000 : process.env.PORT);
 });
+
+exports.close = (callback) => {
+    myServer.close(callback);
+};
 
 function parseStudentFromRequest(req) {
     return {
         name: req.body.name,
-        picSrc: req.body.picture,
-        bio: req.body.bio
+        picSrc: req.body.picSrc,
+        bio: req.body.bio,
+        id: parseInt(req.body.id, 10)
     };
 }
 
